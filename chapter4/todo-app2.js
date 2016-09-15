@@ -26,7 +26,7 @@ var server = http.createServer(function (req,res) {
 server.listen(3000);
 
 function show(res) {
-    var html = '<html><head><title>Todo List</title></head><body><h1>Todo List</h1>' +
+    var html = '<html><head><title>Todo List</title><meta http-equiv="content-type" content="text/html; charset=UTF-8" />  </head><body><h1>Todo List</h1>' +
         '<ul>'+items.map(function (item) {
             return '<li>' + item + '</li>'
         }).join('') +'</ul>' +
